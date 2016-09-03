@@ -11,10 +11,6 @@ namespace PalindromeCheck
     {
         static bool IsPalindrome(string s)
         {
-            // checking the string for non-letter characters
-            //bool lettersOnly = Regex.IsMatch(s, @"^[a-zA-Z]+$");
-            //if (lettersOnly == false) Console.WriteLine("Input should be a word that contains latin letters only, please try again.");
-            
             // removing all the whitespaces from the string
             string palin = Regex.Replace(s.ToLower(), @"\s+", "");
 
